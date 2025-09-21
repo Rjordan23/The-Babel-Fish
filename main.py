@@ -1,6 +1,3 @@
-# This is the main application file for a Python translator.
-# It uses PyQt5 for the user interface and googletrans for the translation logic.
-
 from PyQt5.QtWidgets import QApplication, QWidget, QTextEdit, QComboBox, QPushButton, QLabel, QHBoxLayout, QVBoxLayout, QFrame
 from PyQt5.QtCore import Qt
 from googletrans import Translator
@@ -11,7 +8,6 @@ class Home(QWidget):
     # Constructor
     def __init__(self):
         super().__init__()
-        # It's more efficient to create the Translator object once
         self.translator = Translator()
         self.initUI()
         self.settings()
